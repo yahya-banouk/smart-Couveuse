@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="mssql-jdbc-9.4.1.jre16">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../jdbc SQL/sqljdbc_9.4/fra/mssql-jdbc-9.4.1.jre16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jdbc SQL/sqljdbc_9.4/fra/mssql-jdbc-9.4.1.jre8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jdbc SQL/sqljdbc_9.4/fra/mssql-jdbc-9.4.1.jre11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/mssql-jdbc-9.4.1.jre16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

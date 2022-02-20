@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.MenuCouveuse">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@falcontech.png" />
+               </image></ImageView>
+            <Button fx:id="BackWindow2Button" layoutX="332.0" layoutY="112.0" mnemonicParsing="false" onAction="#BackWindow2" prefHeight="194.0" prefWidth="233.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
