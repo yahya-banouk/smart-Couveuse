@@ -32,12 +32,15 @@ public class Window2_Oeufs_ConnectionCouveuse {
     {
         if(a==1)
         {
+            couveuseTabButton.setVisible(false);
             PaneInfo.setVisible(true);
+
             a--;
         }
         else
         {
             PaneInfo.setVisible(false);
+            couveuseTabButton.setVisible(true);
             a++;
         }
 

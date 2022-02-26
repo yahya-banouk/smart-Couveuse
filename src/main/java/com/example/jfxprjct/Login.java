@@ -35,12 +35,14 @@ public class Login {
         Connection connection = JavaConnection2DB.getConn();
 
         Statement stm = connection.createStatement();
+        //Statement stmt = BDSingleton.getConn().createStatement();
+        ResultSet rs = stm.executeQuery("select username , password from auth ");
+        //ResultSet rs = stmt.executeQuery("select * from admin where username like '"+username+"' and password like '"+password+"'");
 
-        ResultSet rs = stm.executeQuery("select top(1) usr , psswrd from lgn ");
         while (rs.next())
         {
-            usernam = rs.getString("usr");
-            passwor = rs.getString("psswrd");
+            usernam = rs.getString("username");
+            passwor = rs.getString("password");
 
 
         }
@@ -57,7 +59,7 @@ public class Login {
         if (username.getText().toString().equals(usernam) && password.getText().toString().equals(passwor))
         {
             wronglogin.setText("success");
-            Thread.sleep(5000);
+            //Thread.sleep(5000);
             m.changeScene("window2_Oeufs_ConnectionCouveuse.fxml");
         }
         else if (username.getText().isEmpty() && password.getText().isEmpty())

@@ -59,5 +59,6 @@
     <orderEntry type="library" exported="" name="mssql-jdbc-9.4.1.jre8" level="application" />
     <orderEntry type="library" exported="" name="mssql-jdbc-9.4.1.jre11" level="project" />
     <orderEntry type="library" exported="" name="mssql-jdbc-9.4.1.jre16" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="project" />
   </component>
 </module>

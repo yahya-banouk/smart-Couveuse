@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.Window2_Oeufs_ConnectionCouveuse">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.Window2_Oeufs_ConnectionCouveuse">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="222.0">
          <children>
@@ -13,11 +17,20 @@
                   <Image url="@falcontech.png" />
                </image>
             </ImageView>
-            <Button fx:id="logoutButton" layoutX="69.0" layoutY="340.0" mnemonicParsing="false" onAction="#logOuting" prefHeight="45.0" prefWidth="98.0" text="Button" />
+            <Button fx:id="logoutButton" layoutX="62.0" layoutY="316.0" mnemonicParsing="false" onAction="#logOuting" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #f7da00;" text="EXIT">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
          </children>
       </AnchorPane>
-      <Button fx:id="couveuseTabButton" layoutX="424.0" layoutY="14.0" mnemonicParsing="false" onAction="#allerAuCouveuse" prefHeight="92.0" prefWidth="169.0" text="Connexion avec Couveuses" />
-      <Button fx:id="InfoCouveuse" layoutX="248.0" layoutY="14.0" mnemonicParsing="false" onAction="#seeInfo" prefHeight="92.0" prefWidth="169.0" text="Information d'oeufs" />
+      <Button fx:id="couveuseTabButton" layoutX="240.0" layoutY="118.0" mnemonicParsing="false" onAction="#allerAuCouveuse" prefHeight="92.0" prefWidth="353.0" style="-fx-background-color: #f7da00;" text="Connexion avec Couveuses">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="InfoCouveuse" layoutX="240.0" layoutY="14.0" mnemonicParsing="false" onAction="#seeInfo" prefHeight="92.0" prefWidth="352.0" style="-fx-background-color: #f7da00;" text="Information d'oeufs" textFill="#171717">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
       <Pane fx:id="PaneInfo" layoutX="248.0" layoutY="106.0" prefHeight="295.0" prefWidth="352.0" visible="false">
          <children>
             <AnchorPane layoutX="-1.0" prefHeight="295.0" prefWidth="345.0">

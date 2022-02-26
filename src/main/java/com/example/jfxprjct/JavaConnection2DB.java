@@ -4,8 +4,29 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JavaConnection2DB {
-    private static String url = "jdbc:sqlserver://DESKTOP-J6RLJ3K;databasename=mydatabase";
-    private static String user = "sa";
+    private static Connection conn ;
+
+    static {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/couveuseDB" , "root","");
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();}
+
+    }
+
+    public static Connection getConn() {
+        return conn;
+    }
+};
+/*import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JavaConnection2DB {
+    private static String url = "jdbc:sqlserver://DESKTOP-UNKQJ81;databasename=gestionCouveuse";
+    private static String user = "ya";
     private static String password = "yahyabanouk99";
     private static Connection connection ;
     static {
@@ -33,7 +54,7 @@ public class JavaConnection2DB {
     }
 
 };
-
+*/
 
 
 
