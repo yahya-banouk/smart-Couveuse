@@ -22,20 +22,20 @@
                <font>
                   <Font size="25.0" />
                </font></Button>
-            <TableView fx:id="tableCouv" layoutX="267.0" layoutY="71.0" prefHeight="329.0" prefWidth="333.0" style="-fx-background-color: #171717;">
+            <TableView fx:id="tableCouv" editable="true" layoutX="267.0" layoutY="71.0" prefHeight="329.0" prefWidth="333.0" style="-fx-background-color: #171717;">
               <columns>
-                <TableColumn fx:id="idCouv" maxWidth="70.0" prefWidth="30.6666259765625" text="ID" />
-                <TableColumn fx:id="temperatureCouv" prefWidth="78.00006103515625" text="temperature" />
-                  <TableColumn fx:id="humiditeCouv" prefWidth="58.66668701171875" text="humidite" />
+                <TableColumn fx:id="idCouv" maxWidth="70.0" prefWidth="30.6666259765625" style="-fx-alignment: center;" text="ID" />
+                <TableColumn fx:id="temperatureCouv" onEditCommit="#changeTemperature" prefWidth="78.00006103515625" style="-fx-alignment: center;" text="temperature" />
+                  <TableColumn fx:id="humiditeCouv" onEditCommit="#changeHumidite" prefWidth="58.66668701171875" style="-fx-alignment: center;" text="humidite" />
                   <TableColumn fx:id="dureCouv" minWidth="0.0" prefWidth="0.0" text="dure" />
-                  <TableColumn fx:id="dateIncuvationCouv" minWidth="0.6666259765625" prefWidth="90.00009155273438" text="dateIncuvation" />
-                  <TableColumn fx:id="editCouv" maxWidth="100.0" prefWidth="43.33331298828125" text="edit" />
+                  <TableColumn fx:id="dateIncuvationCouv" minWidth="0.6666259765625" onEditCommit="#changeDateIncuvation" prefWidth="90.00009155273438" style="-fx-alignment: center;" text="dateIncuvation" />
+                  <TableColumn fx:id="editCouv" maxWidth="100.0" prefWidth="43.33331298828125" style="-fx-alignment: center;" text="edit" />
               </columns>
             </TableView>
             <HBox layoutX="17.0" layoutY="10.0" prefHeight="68.0" prefWidth="183.0" style="-fx-background-color: white;">
                <children>
                   
-                  <ImageView fx:id="updateCouv" fitHeight="69.0" fitWidth="65.0" onMouseClicked="#updateCouvMethode" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="updateCouv" fitHeight="69.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../../../Users/ASUS/Desktop/PARA.png" />
                      </image>

@@ -33,20 +33,7 @@
          </font></Button>
       <Pane fx:id="PaneInfo" layoutX="248.0" layoutY="106.0" prefHeight="295.0" prefWidth="352.0" visible="false">
          <children>
-            <AnchorPane layoutX="-1.0" prefHeight="295.0" prefWidth="345.0">
-               <children>
-                  <ImageView fitHeight="127.0" fitWidth="335.0" layoutX="18.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Capture%20d’écran%202022-02-19%20135003.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="335.0" layoutX="18.0" layoutY="2.0">
-                     <image>
-                        <Image url="@Capture%20d’écran%202022-02-19%20135638.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
+
             <ScrollBar orientation="VERTICAL" prefHeight="295.0" prefWidth="15.0" style="-fx-background-color: #171717;" />
          </children>
       </Pane>

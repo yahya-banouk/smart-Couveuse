@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.MenuCouveuse">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.MenuCouveuse">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;">
          <children>
-            <ImageView fitHeight="400.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="400.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@falcontech.png" />
                </image></ImageView>
-            <Button fx:id="BackWindow2Button" layoutX="330.0" layoutY="41.0" mnemonicParsing="false" onAction="#BackWindow2" prefHeight="28.0" prefWidth="233.0" text="back" />
+            <Button fx:id="BackWindow2Button" layoutX="25.0" layoutY="343.0" mnemonicParsing="false" onAction="#BackWindow2" prefHeight="28.0" prefWidth="233.0" style="-fx-background-color: #f7da00;" text="back">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+            <TableView fx:id="tableCouv" editable="true" layoutX="267.0" layoutY="71.0" prefHeight="329.0" prefWidth="333.0" style="-fx-background-color: #171717;">
+              <columns>
+                <TableColumn fx:id="idCouv" maxWidth="70.0" prefWidth="30.6666259765625" style="-fx-alignment: center;" text="ID" />
+                <TableColumn fx:id="temperatureCouv" onEditCommit="#changeTemperature" prefWidth="78.00006103515625" style="-fx-alignment: center;" text="temperature" />
+                  <TableColumn fx:id="humiditeCouv" onEditCommit="#changeHumidite" prefWidth="58.66668701171875" style="-fx-alignment: center;" text="humidite" />
+                  <TableColumn fx:id="dureCouv" minWidth="0.0" prefWidth="0.0" text="dure" />
+                  <TableColumn fx:id="dateIncuvationCouv" minWidth="0.6666259765625" onEditCommit="#changeDateIncuvation" prefWidth="90.00009155273438" style="-fx-alignment: center;" text="dateIncuvation" />
+                  <TableColumn fx:id="editCouv" maxWidth="100.0" prefWidth="43.33331298828125" style="-fx-alignment: center;" text="edit" />
+              </columns>
+            </TableView>
+            <HBox layoutX="17.0" layoutY="10.0" prefHeight="68.0" prefWidth="183.0" style="-fx-background-color: white;">
+               <children>
+                  
+                  <ImageView fx:id="updateCouv" fitHeight="69.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Users/ASUS/Desktop/PARA.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
          </children>
       </AnchorPane>
    </children>
