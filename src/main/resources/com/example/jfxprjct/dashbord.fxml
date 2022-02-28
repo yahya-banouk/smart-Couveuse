@@ -3,18 +3,30 @@
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.Dashbord">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #9a802f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.DashBord">
    <children>
-      <BarChart fx:id="barChart" layoutX="98.0" layoutY="95.0" title="COUVEUSE">
+      <BarChart fx:id="barChart" layoutX="14.0" layoutY="14.0" style="-fx-border-color: #f7da00;" title="Temperature Couveuse">
         <xAxis>
-          <CategoryAxis fx:id="axeCouv" label="Couveuse" side="BOTTOM" />
+          <CategoryAxis fx:id="axeCouv" label="Couveuse ID" prefHeight="0.0" prefWidth="402.0" side="BOTTOM" />
         </xAxis>
         <yAxis>
           <NumberAxis fx:id="axeTemp" label="TEMPERATURE" side="LEFT" />
         </yAxis>
       </BarChart>
+      <BarChart fx:id="barChart1" layoutX="519.0" layoutY="13.0" prefHeight="400.0" prefWidth="471.0" style="-fx-border-color: #f7da00;" title="Humidite Couveuse">
+        <xAxis>
+          <CategoryAxis fx:id="axeCouv1" label="couveuse ID" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="axeHum" label="Humidite" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="backaway" layoutY="567.0" mnemonicParsing="false" onAction="#tobackaway" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #171717;" text="back" textFill="WHITE" />
+      <Button fx:id="exitaway" layoutX="117.0" layoutY="567.0" mnemonicParsing="false" onAction="#toexitAway" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #171717;" text="Exit" textFill="WHITE" />
+      <Pane layoutX="514.0" layoutY="-7.0" prefHeight="613.0" prefWidth="7.0" style="-fx-background-color: #171717;" />
    </children>
 </AnchorPane>

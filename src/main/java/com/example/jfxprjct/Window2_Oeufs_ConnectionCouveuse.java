@@ -40,6 +40,7 @@ public class Window2_Oeufs_ConnectionCouveuse {
         {
             couveuseTabButton.setVisible(false);
             PaneInfo.setVisible(true);
+            dachboardButton.setVisible(false);
 
             a--;
         }
@@ -47,6 +48,7 @@ public class Window2_Oeufs_ConnectionCouveuse {
         {
             PaneInfo.setVisible(false);
             couveuseTabButton.setVisible(true);
+            dachboardButton.setVisible(true);
             a++;
         }
 
@@ -63,4 +65,6 @@ public class Window2_Oeufs_ConnectionCouveuse {
         // do what you have to do
         stage.close();
     }
+
+
 }
