@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -20,8 +21,10 @@ public class HelloApplication extends Application {
             stg = stage;
 
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), sizew, sizeh);
+            Scene scene = new Scene(fxmlLoader.load());
             stage.setResizable(false);
+
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Manager-Login");
             stage.setScene(scene);
             stage.show();

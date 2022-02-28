@@ -7,15 +7,23 @@ public class Couveuse{
     int  temperature;
     int humidite;
     String datIncuvation;
+    String power;
 
-    public Couveuse(int id, int temperature, int humidite, String datIncuvation) {
+    public String getPower() {
+        return power;
+    }
+
+    public void setPower(String power) {
+        this.power = power;
+    }
+
+    public Couveuse(int id, int temperature, int humidite, String datIncuvation, String power) {
         this.id = id;
         this.temperature = temperature;
         this.humidite = humidite;
         this.datIncuvation = datIncuvation;
+        this.power = power;
     }
-
-
 
     public int getId() {
         return id;

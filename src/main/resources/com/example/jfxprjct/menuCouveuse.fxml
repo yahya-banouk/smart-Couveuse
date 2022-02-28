@@ -1,48 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.MenuCouveuse">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfxprjct.MenuCouveuse">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #171717;">
          <children>
             <ImageView fitHeight="400.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@falcontech.png" />
+                  <Image url="@logonv.png" />
                </image></ImageView>
-            <Button fx:id="BackWindow2Button" layoutX="25.0" layoutY="343.0" mnemonicParsing="false" onAction="#BackWindow2" prefHeight="28.0" prefWidth="233.0" style="-fx-background-color: #f7da00;" text="back">
-               <font>
-                  <Font size="25.0" />
-               </font></Button>
-            <TableView fx:id="tableCouv" editable="true" layoutX="267.0" layoutY="71.0" prefHeight="329.0" prefWidth="333.0" style="-fx-background-color: #171717;">
+            <TableView fx:id="tableCouv" editable="true" layoutX="262.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="737.0" style="-fx-background-color: #171717;" stylesheets="@../../../style/styles.css">
               <columns>
                 <TableColumn fx:id="idCouv" maxWidth="70.0" prefWidth="30.6666259765625" style="-fx-alignment: center;" text="ID" />
-                <TableColumn fx:id="temperatureCouv" onEditCommit="#changeTemperature" prefWidth="78.00006103515625" style="-fx-alignment: center;" text="temperature" />
-                  <TableColumn fx:id="humiditeCouv" onEditCommit="#changeHumidite" prefWidth="58.66668701171875" style="-fx-alignment: center;" text="humidite" />
-                  <TableColumn fx:id="dureCouv" minWidth="0.0" prefWidth="0.0" text="dure" />
-                  <TableColumn fx:id="dateIncuvationCouv" minWidth="0.6666259765625" onEditCommit="#changeDateIncuvation" prefWidth="90.00009155273438" style="-fx-alignment: center;" text="dateIncuvation" />
-                  <TableColumn fx:id="editCouv" maxWidth="100.0" prefWidth="43.33331298828125" style="-fx-alignment: center;" text="edit" />
+                <TableColumn fx:id="temperatureCouv" onEditCommit="#changeTemperature" prefWidth="110.66665649414062" style="-fx-alignment: center;" text="temperature" />
+                  <TableColumn fx:id="humiditeCouv" onEditCommit="#changeHumidite" prefWidth="127.99996948242188" style="-fx-alignment: center;" text="humidite" />
+                  <TableColumn fx:id="dureCouv" minWidth="0.0" prefWidth="111.3333740234375" text="dure" />
+                  <TableColumn fx:id="dateIncuvationCouv" minWidth="0.6666259765625" onEditCommit="#changeDateIncuvation" prefWidth="207.3333740234375" style="-fx-alignment: center;" text="dateIncuvation" />
+                  <TableColumn fx:id="powerCouv" maxWidth="471.33331298828125" prefWidth="146.0" style="-fx-alignment: center;" text="power" />
               </columns>
             </TableView>
-            <HBox layoutX="17.0" layoutY="10.0" prefHeight="68.0" prefWidth="183.0" style="-fx-background-color: white;">
-               <children>
-                  
-                  <ImageView fx:id="updateCouv" fitHeight="69.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../Users/ASUS/Desktop/PARA.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="69.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
-               </children>
-            </HBox>
+            <Label layoutX="42.0" layoutY="456.0" text="ID Couveuse" textFill="#f7da00">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idCov" layoutX="215.0" layoutY="466.0" prefHeight="25.0" prefWidth="251.0" promptText="idCouveuse" style="-fx-background-color: #606060;" />
+            <Button fx:id="startButton" layoutX="219.0" layoutY="516.0" mnemonicParsing="false" onAction="#startDown" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #f7da00;" text="On/Off">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            
+            <Button fx:id="exitButton" layoutX="675.0" layoutY="537.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="263.0" style="-fx-background-color: #f7da00;" text="Exit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackWindow2Button" layoutX="676.0" layoutY="473.0" mnemonicParsing="false" onAction="#BackWindow2" prefHeight="33.0" prefWidth="259.0" style="-fx-background-color: #f7da00;" text="back">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

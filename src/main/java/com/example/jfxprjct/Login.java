@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.sql.*;
 
@@ -18,6 +19,8 @@ public class Login {
     private String usernam;
     private String passwor;
 
+    @FXML
+    private Button exitButton;
     @FXML
     private Button button ;
     @FXML
@@ -75,4 +78,9 @@ public class Login {
     }
 
 
+    public void exit(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) exitButton.getScene().getWindow();
+        // do what you have to do
+        stage.close();
+    }
 }
