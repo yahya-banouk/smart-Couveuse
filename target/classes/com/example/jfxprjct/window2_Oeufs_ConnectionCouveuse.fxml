@@ -22,20 +22,20 @@
          <font>
             <Font size="25.0" />
          </font></Button>
-      <Button fx:id="InfoCouveuse" layoutX="264.0" layoutY="14.0" mnemonicParsing="false" onAction="#seeInfo" prefHeight="92.0" prefWidth="713.0" style="-fx-background-color: #f7da00;" text="Information d'oeufs" textFill="#171717">
+      <Button fx:id="InfoCouveuse" layoutX="264.0" layoutY="14.0" mnemonicParsing="false" onAction="#seeInfo" prefHeight="92.0" prefWidth="719.0" style="-fx-background-color: #f7da00;" text="Information d'oeufs" textFill="#171717">
          <font>
             <Font size="25.0" />
          </font></Button>
-      <Pane fx:id="PaneInfo" layoutX="248.0" layoutY="106.0" prefHeight="295.0" prefWidth="352.0" visible="false">
+      <Pane fx:id="PaneInfo" layoutX="248.0" layoutY="106.0" prefHeight="424.0" prefWidth="732.0" visible="false">
          <children>
             <AnchorPane prefHeight="295.0" prefWidth="352.0">
                <children>
-                  <ImageView fitHeight="148.0" fitWidth="325.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="192.0" fitWidth="345.0" layoutX="209.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Ouef.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="126.0" fitWidth="353.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="391.0" fitWidth="714.0" layoutX="34.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@InfoOeuf.png" />
                      </image>
